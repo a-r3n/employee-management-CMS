@@ -5,8 +5,8 @@ const mysql = require('mysql2/promise');
 const connectToDatabase = async () => {
   return mysql.createConnection({
     host: 'localhost',
-    user: 'root', // replace with your database user
-    password: 'password', // replace with your database password
+    user: 'root', 
+    password: 'password', 
     database: 'employees_db'
   });
 };
