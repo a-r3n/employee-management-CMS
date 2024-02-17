@@ -12,8 +12,6 @@ INSERT INTO department (department_name) VALUES
 ('Operations');
 
 -- Populate the role table
--- Note: The department_id should correspond to the ids of the departments you inserted above.
--- Adjust the department_id values as necessary based on the actual ids in your department table.
 INSERT INTO role (title, salary, department_id) VALUES
 ('Software Engineer', 70000, 1),
 ('Human Resources Manager', 65000, 2),
@@ -27,9 +25,7 @@ INSERT INTO role (title, salary, department_id) VALUES
 ('Operations Manager', 80000, 10);
 
 -- Populate the employee table
--- Note: The role_id should correspond to the ids of the roles you inserted above.
 -- The manager_id is optional and can be set to NULL if the employee does not have a manager.
--- Adjust the role_id and manager_id values as necessary based on the actual ids in your role and employee tables.
 INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES
 ('John', 'Doe', 1, NULL),
 ('Jane', 'Smith', 2, 1),
